@@ -39,6 +39,8 @@ module.exports = {
           id: id
         }
       })
+    } catch (err) {
+      return res.status(404).json({ message: 'Error on servidor' })
     }
   }
 
