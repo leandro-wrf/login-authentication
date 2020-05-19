@@ -2,3 +2,4 @@
 
 __back/node_modules/*
 __back/yarn.lock
+__back/data

@@ -1,8 +1,9 @@
 const { Router } = require('express')
 const routes = Router()
 
-routes.get('/', (req, res) =>
-  res.json({ message: 'Server Running' })
-)
+const UserController = require('./controllers/UserController')
+
+routes.get('/', UserController.index)
+routes.get('/register', UserController.create)
 
 module.exports = routes
