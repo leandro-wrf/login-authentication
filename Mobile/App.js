@@ -1,12 +1,7 @@
+import 'react-native-gesture-handler';
 import React from 'react';
-import {Container} from './src/styled/global.js';
-
-import SingIn from './src/pages/Home';
+import Router from './src/routes';
 
 export default function App() {
-  return (
-    <Container>
-      <SingIn />
-    </Container>
-  );
+  return <Router />;
 }
