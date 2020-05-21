@@ -7,6 +7,11 @@ const UserController = require('./controllers/UserController')
 routes.get('/', UserController.index)
 
 routes.post(
+  '/authentication/:token',
+  AuthenticationController.validation
+)
+
+routes.post(
   '/register',
   celebrate({
     [Segments.BODY]: Joi.object().keys({
