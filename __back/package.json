@@ -10,7 +10,6 @@
   "dependencies": {
     "celebrate": "^12.1.1",
     "express": "^4.17.1",
-    "node-jws": "^0.1.3",
     "sequelize": "^5.21.10",
     "sqlite3": "^4.2.0"
   },
