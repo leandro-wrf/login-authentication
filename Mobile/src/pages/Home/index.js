@@ -1,6 +1,11 @@
 import React from 'react';
-import {View} from 'react-native';
+import {Container} from '../../styled/global';
+import {Title} from '../../styled/home';
 
 export default function Home() {
-  return <View />;
+  return (
+    <Container>
+      <Title>Welcome to new User</Title>
+    </Container>
+  );
 }

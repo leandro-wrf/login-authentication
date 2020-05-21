@@ -33,9 +33,3 @@ export const Button = styled.TouchableOpacity`
 export const Text = styled.Text`
   font-size: 28px;
 `;
-
-export const SingUp = styled.Text`
-  font-size: 17px;
-  font-weight: bold;
-  margin: 8px;
-`;

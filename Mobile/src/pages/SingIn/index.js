@@ -1,13 +1,24 @@
 import React from 'react';
-import {Container, Box} from '../../styled/singin';
+import {Container, Box, Field, Button, Text, SingUp} from '../../styled/singin';
 import {useNavigation} from '@react-navigation/native';
 
-export default function SingUp() {
+export default function SingIn() {
   const navigation = useNavigation();
 
   return (
     <Container>
-      <Box />
+      <Box>
+        <Field placeholder="example@example.com" />
+        <Field placeholder="password" />
+
+        <Button onPress={() => navigation.navigate('Home')}>
+          <Text>Login</Text>
+        </Button>
+
+        <Button onPress={() => navigation.navigate('SingUp')}>
+          <SingUp>Sing Up</SingUp>
+        </Button>
+      </Box>
     </Container>
   );
 }
