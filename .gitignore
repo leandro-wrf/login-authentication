@@ -1,5 +1,4 @@
 ### __back
 
-__back/node_modules/*
-__back/yarn.lock
-__back/data
+backend/node_modules/*
+backend/yarn.lock

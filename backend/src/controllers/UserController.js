@@ -3,7 +3,9 @@ const jwt = require('jsonwebtoken')
 
 module.exports = {
   async index(req, res) {
-    const data = await User.findAll()
+    const data = await User.findAll({
+      attributes: ['user', 'email']
+    })
 
     return res.json(data)
   },
