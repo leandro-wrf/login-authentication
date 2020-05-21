@@ -3,8 +3,9 @@ const { celebrate, Segments, Joi } = require('celebrate')
 const routes = Router()
 
 const UserController = require('./controllers/UserController')
+const AuthenticationController = require('./controllers/AuthenticationController')
 
-routes.get('/', UserController.index)
+routes.get('/users', UserController.index)
 
 routes.post(
   '/authentication/:token',
@@ -16,7 +17,7 @@ routes.post(
   celebrate({
     [Segments.BODY]: Joi.object().keys({
       user: Joi.string().required(),
-      email: Joi.string.required(),
+      email: Joi.string().required(),
       password: Joi.string().required()
     })
   }),
@@ -24,7 +25,7 @@ routes.post(
 )
 
 routes.put(
-  '/user/id',
+  '/user/:id',
   celebrate({
     [Segments.PARAMS]: Joi.object().keys({
       id: Joi.number().integer().required()
@@ -38,7 +39,7 @@ routes.put(
 )
 
 routes.delete(
-  '/user/id',
+  '/user/:id',
   celebrate({
     [Segments.PARAMS]: Joi.object().keys({
       id: Joi.number().integer().required()

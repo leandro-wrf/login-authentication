@@ -5,16 +5,13 @@ module.exports = {
   async validation(req, res) {
     const { token } = req.params
 
-    const { user, email, password } = jwt.verify(
-      token,
-      process.env.PRIVATEKEY
-    )
+    const data = jwt.verify(token, process.env.PRIVATEKEY)
 
     try {
       await User.create({
-        user,
-        email,
-        password
+        user: data.user,
+        email: data.email,
+        password: data.password
       })
     } catch (err) {
       return res
