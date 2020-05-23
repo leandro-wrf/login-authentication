@@ -2,7 +2,9 @@
 <p align="center">
 <img src="https://img.shields.io/cocoapods/l/git?label=LICENSE&logo=MIT&style=for-the-badge"/>
 </p>
-<p>
+<p align="center">
+  <img src="images/image1.jpg" alt="signIn" width="400px" height="500px"/>
+  <img src="images/image2.jpg" alt="signUp" width="400px" height="500px">
 </p>
 <h3>Technologies used in this project</h3>
 <ul>
@@ -13,14 +15,14 @@
 <li>Styled-Components</li>
 </ul>
 
-<h4>How to initialize project</h4>
+<h3>How to initialize project</h3>
 <b>Clone this repo</b>
    
 
      git clone https://github.com/leandro-wrf/login-authentication.git
      cd login-authentication
 
-<b>Backend</b>
+<b>Backend:</b>
 
     cd backend && yarn
     yarn dev
