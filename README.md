@@ -1,10 +1,12 @@
 <h1 align="center">User Authentication</h1>
 <p align="center">
 <img src="https://img.shields.io/cocoapods/l/git?label=LICENSE&logo=MIT&style=for-the-badge"/>
+<img src="https://img.shields.io/github/stars/leandro-wrf/login-authentication?color=000&style=for-the-badge"/>
+<img src="https://img.shields.io/github/forks/leandro-wrf/login-authentication?color=000&style=for-the-badge" />
 </p>
 <p align="center">
-  <img src="images/image1.jpg" alt="signIn" width="400px" height="500px"/>
-  <img src="images/image2.jpg" alt="signUp" width="400px" height="500px">
+  <img src="images/image1.jpg" alt="signIn" width="228px" height="470px"/>
+  <img src="images/image2.jpg" alt="signUp" width="228px" height="470px">
 </p>
 <h3>Technologies used in this project</h3>
 <ul>
